@@ -3,14 +3,15 @@
   <div class="fighters row col-lg">
     <div class="fighter" v-for="fighter in fighters" :key="fighter.id">
       <div class="info">
-        <h1 class="row">{{fighter.name}}</h1>
+        <h1 class="row">{{fighter.name.toUpperCase()}}</h1>
         <h2 class="row">{{fighter.country}}</h2>
+        <h2 class="row">{{fighter.price}}</h2>
       </div>
       <div class="image row">
         <img :src="'/images/fighters/'+fighter.image">
       </div>
       <div class="add-fighter">
-        <button class="auto" @click="addToCart(fighter.id)">Add to Match</button>
+        <button class="auto" @click="addToCombatants(fighter.id)">Add to Match</button>
       </div>
     </div>
   </div>
@@ -24,7 +25,7 @@ export default {
     fighters: Array
   },//HERE ON OUT I WROTE
   methods: {
-    addToCart(id) {
+    addToCombatants(id) {
       this.$root.$data.combatants.push(id);
     }
   }
@@ -67,8 +68,8 @@ export default {
 }
 
 .info {
-  background: #F2921D;
-  color: #000;
+  background: black;
+  color: white;
   padding: 0px 10px;
   height: 80px;
 }
@@ -81,6 +82,7 @@ export default {
 .info h2 {
   font-size: 1em;
   justify-content: center;
+  margin-top: -8px;
 }
 
 .info p {
@@ -99,6 +101,14 @@ button {
   color: white;
   width: 100%;
   border: none;
+}
+
+button:hover {
+  background-color: #3283a8;
+}
+
+button:active {
+  background-color: #0079eb;
 }
 
 .auto {

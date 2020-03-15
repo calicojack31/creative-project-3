@@ -1,8 +1,8 @@
 let mockFighters = [{
     id: 1,
     name: "Mario",
-    price: "$5.62",
-    country: "Part Time Plumber",
+    price: "Part Time Plumber, Full Time Hero",
+    country: "Mushroom Kingdom",
     image: 'mario.jpg'
   },
   {

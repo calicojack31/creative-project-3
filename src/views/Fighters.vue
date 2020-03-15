@@ -33,6 +33,12 @@ export default {
 </script>
 
 <style scoped>
+
+/*
+.fa-search::before {
+  content: "\f002";
+}*/
+
 .allow-footer {
   padding-bottom: 170px;
 }
