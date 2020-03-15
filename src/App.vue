@@ -30,14 +30,14 @@
   <router-view />
 
 
-
+<h1 class="allow-footer"></h1>
   <footer class="footer">
     <div class="container">
       <div class="row">
         <div class="col-lg">
           <h5 class="footer-heading">Nintendo, please don't sue me.</h5>
           <p class="footer-text">I'm a huge fan of Nintendo and the Super Smash Bros. games, and I made this website for a school project. It was an educational labor of love, which I think falls under
-             at least two fair use clauses. Lawyers, correct me if I'm wrong (I probably am). Sakurai, I love you. <a href="https://github.com/calicojack31/third-creative-project.git">GitHub Repository Here</a>
+             at least two fair use clauses. Lawyers, correct me if I'm wrong (I probably am). Sakurai, I love you. <a href="https://github.com/calicojack31/creative-project-3.git">GitHub Repository Here</a>
           </p>
         </div>
       </div>
@@ -88,6 +88,9 @@ h5 {
   margin-right: 100px;
 }
 
+.allow-footer {
+  padding-bottom: 220px;
+}
 
 * {
   box-sizing: border-box;
@@ -100,17 +103,19 @@ html {
   margin-right: 100px;*/
 }
 
+/*
 body {
-  margin-left: 100px;
-  margin-right: 100px;
-}
+  margin-left: 50px;
+  margin-right: 50px;
+}*/
 
 footer {
   position: absolute;
   bottom: 0;/*it being -130 fixes it*/
   width: 100%;
-  height: 130px;
+  /*height: 130px;*/
   text-align: center;
+  margin-top: 10px;
 }
 
 

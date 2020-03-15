@@ -33,7 +33,6 @@
       <button class="auto" id="start-battle" @click="chooseWinner()">Fight!</button>
       <div id="battle-results">
       </div>
-      <h1 class="allow-footer"></h1>
     </div>
 
   </div>
@@ -101,10 +100,6 @@ export default {
 </script>
 
 <style scoped>
-
-.allow-footer {
-  padding-bottom: 170px;
-}
 
 
 .wrapper {

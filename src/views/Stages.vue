@@ -8,7 +8,6 @@
     </div>
   </div>
   <StageList :stages="stages" />
-  <h1 class="allow-footer"></h1>
 </div>
 </template>
 
@@ -33,10 +32,6 @@ export default {
 </script>
 
 <style scoped>
-
-.allow-footer {
-  padding-bottom: 170px;
-}
 
 .wrapper {
   display: flex;

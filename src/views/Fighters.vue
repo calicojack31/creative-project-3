@@ -8,7 +8,6 @@
     </div>
   </div>
   <FighterList :fighters="fighters" />
-  <h1 class="allow-footer"></h1>
 </div>
 </template>
 
@@ -38,10 +37,6 @@ export default {
 .fa-search::before {
   content: "\f002";
 }*/
-
-.allow-footer {
-  padding-bottom: 170px;
-}
 
 
 .wrapper {

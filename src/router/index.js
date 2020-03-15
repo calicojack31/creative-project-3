@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import NewHome from '../views/NewHome.vue'
+import Home from '../views/Home.vue'
 //import Browse from '../views/Browse.vue'
 //import Cart from '../views/Cart.vue'
 import Fighters from '../views/Fighters.vue'
@@ -11,8 +11,8 @@ Vue.use(VueRouter)
 
 const routes = [{
     path: '/',
-    name: 'NewHome',
-    component: NewHome
+    name: 'Home',
+    component: Home
   },
   //  {
   //  path: '/browse',
