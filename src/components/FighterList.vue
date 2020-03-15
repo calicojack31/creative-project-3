@@ -101,6 +101,7 @@ button {
   color: white;
   width: 100%;
   border: none;
+  margin-top: -8px;
 }
 
 button:hover {
