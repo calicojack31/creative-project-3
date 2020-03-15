@@ -37,7 +37,7 @@
         <div class="col-lg">
           <h5 class="footer-heading">Nintendo, please don't sue me.</h5>
           <p class="footer-text">I'm a huge fan of Nintendo and the Super Smash Bros. games, and I made this website for a school project. It was an educational labor of love, which I think falls under
-             at least two fair use clauses. Lawyers, correct me if I'm wrong (I probably am). Sakurai, I love you. <a href="https://github.com/calicojack31/creative-project-2.git">UPDATE THIS GitHub Repository Here</a>
+             at least two fair use clauses. Lawyers, correct me if I'm wrong (I probably am). Sakurai, I love you. <a href="https://github.com/calicojack31/third-creative-project.git">GitHub Repository Here</a>
           </p>
         </div>
       </div>
@@ -110,6 +110,7 @@ footer {
   bottom: 0;/*it being -130 fixes it*/
   width: 100%;
   height: 130px;
+  text-align: center;
 }
 
 

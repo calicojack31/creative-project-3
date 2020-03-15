@@ -109,7 +109,7 @@ button:hover {
 }
 
 button:active {
-  background-color: #0079eb;
+  background-color: #0c8534;
 }
 
 .auto {

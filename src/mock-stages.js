@@ -1,30 +1,30 @@
 let mockStages = [{
     id: 1,
     name: "Final Destination",
-    price: "$2.47",
+    description: "Death or Glory",
     country: "Canada",
     image: 'final-destination.jpg'
   },
   {
     id: 2,
     name: "Temple",
-    price: "$8.77",
+    description: "Perfect for a Casual Game",
     country: "Brazil",
     image: 'temple.png'
   },
   {
-    id: 7,
-    name: "Langers Mango Nectar",
-    price: "$9.24",
+    id: 3,
+    name: "Pokémon Stadium",
+    description: "Whimsical and Dynamic",
     country: "Brazil",
-    image: 'mango-nectar.jpg'
+    image: 'pokemon-stadium.png'
   },
   {
-    id: 8,
-    name: "Cucumber",
-    price: "$3.02",
+    id: 4,
+    name: "The Octagon",
+    description: "Puts Things in Perspective",
     country: "Canada",
-    image: 'cucumber.jpg'
+    image: 'octagon.jpg'
   }
 ]
 

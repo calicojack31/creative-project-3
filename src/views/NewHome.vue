@@ -77,4 +77,10 @@ input {
   width: 100%;
   height: 40px;
 }
+
+.welcome-text {
+align-content: center;
+text-align: center;
+}
+
 </style>
