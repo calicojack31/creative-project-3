@@ -90,7 +90,6 @@ export default {
   font-size: 10px;
 }
 
-
 .add-fighter {
   display: flex;
 }

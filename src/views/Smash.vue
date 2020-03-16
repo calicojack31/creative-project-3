@@ -3,26 +3,23 @@
   <div class="fighters">
     <div class="fighter" v-for="item in $root.$data.combatants" :key="item"><!--EARLIER THE KEY WAS $ROOT.$DATA.CART[ITEM]-->
       <div class="info">
-        <h1>{{getFighter(item).name}}</h1>
-        <p>{{getFighter(item).country}}</p>
+        <h1 class="row">{{getFighter(item).name.toUpperCase()}}</h1>
+        <h2 class="row">{{getFighter(item).country}}</h2>
+        <h2 class="row">{{getFighter(item).price}}</h2>
       </div>
-      <div class="image">
+      <div class="image row">
         <img :src="'/images/fighters/'+getFighter(item).image">
       </div>
-      <div class="price">
-        <h2>{{getFighter(item).price}}</h2>
+      <div class="remove-fighter">
         <button class="auto" @click="removeFromCombatants($root.$data.combatants.indexOf(item))">Remove</button>
-      </div>
-      <div class="amount">
-        <h3>{{getAmount(item)}} in combatants</h3>
       </div>
     </div>
   </div>
-  <div class="wrapper" v-if="$root.$data.stageSelection != ''">
+  <div class="wrapper container" v-if="$root.$data.stageSelection != ''">
     <div class="stage">
       <div class="info">
-        <h1>{{getStage($root.$data.stageSelection).name}}</h1>
-        <p>{{getStage($root.$data.stageSelection).country}}</p>
+        <h1 class="row">{{getStage($root.$data.stageSelection).name}}</h1>
+        <h2 class="row">{{getStage($root.$data.stageSelection).description}}</h2>
       </div>
       <div class="image">
         <img :src="'/images/stages/'+getStage($root.$data.stageSelection).image">
@@ -30,7 +27,7 @@
     </div>
 
     <div>
-      <button class="auto" id="start-battle" @click="chooseWinner()">Fight!</button>
+      <button class="auto" id="start-battle" @click="chooseWinner()"><em>FIGHT!</em></button>
       <div id="battle-results">
       </div>
     </div>
@@ -100,8 +97,6 @@ export default {
 </script>
 
 <style scoped>
-
-
 .wrapper {
   display: flex;
   align-items: center;
@@ -133,20 +128,21 @@ export default {
 .fighter {
   margin: 10px;
   margin-top: 50px;
-  width: 200px;
+  width: 300px;
+  border: 2px solid #333;
 }
 
 .fighter img {
   border: 2px solid #333;
-  height: 250px;
-  width: 200px;
+  height: 375px;
+  width: 300px;
   object-fit: cover;
 }
 
 .fighter .image {
   display: flex;
   justify-content: center;
-  margin-bottom: 5px;
+  /*margin-bottom: 5px;*/
 }
 
 .stage {
@@ -164,26 +160,27 @@ export default {
 }
 
 .info {
-  background: #617a6b;
-  color: #000;
-  border: 2px solid #333;
-  padding: 10px 30px;
+  background: black;
+  color: white;
+  padding: 0px 10px;
   height: 80px;
 }
 
 .info h1 {
-  font-size: 16px;
+  font-size: 2em;
+  justify-content: center;
 }
 
 .info h2 {
-  font-size: 14px;
+  font-size: 1em;
+  justify-content: center;
+  margin-top: -8px;
 }
 
 .info p {
   margin: 0px;
   font-size: 10px;
 }
-
 
 .price {
   display: flex;
@@ -193,20 +190,45 @@ export default {
   margin-top: -5px;
 }
 
-button {
-  height: 50px;
-  background: #a60202;
-  color: white;
-  border: none;
+.remove-figher {
+  display: flex;
 }
+
+button {
+  height: 100%;
+  background: red;
+  color: white;
+  width: 100%;
+  border: none;
+  margin-top: -8px;
+  /*border: 5px solid blue;*/
+}
+
+button:hover {
+  background-color: pink;
+}
+
+button:active {
+  background-color: purple;
+}
+
 
 #start-battle {
   height: 100px;
   width: 500px;
   margin: 25px;
-  background: green;
-  border: 5px solid red;
+  background: #2a6942;
+  font-size: 3em;
 }
+
+#start-battle:hover {
+  background: #5d9974
+}
+
+#start-battle:active {
+  background: #02c94e;
+}
+
 
 .auto {
   margin-left: auto;

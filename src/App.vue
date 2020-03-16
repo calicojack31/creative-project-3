@@ -92,6 +92,10 @@ h5 {
   padding-bottom: 220px;
 }
 
+.fa-search {
+  background-color: white;
+}/*Hear so the magnifying glass portion is not transparent*/
+
 * {
   box-sizing: border-box;
 }
