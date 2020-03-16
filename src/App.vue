@@ -191,6 +191,10 @@ body {
 }
 */
 
+a {
+  color: #0018d1;
+}
+
 html::after {
   content: "";
   background: url(/images/take-three.png) no-repeat center center fixed;

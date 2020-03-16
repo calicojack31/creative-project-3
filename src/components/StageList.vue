@@ -107,7 +107,7 @@ img {
 
 button {
   height: 100%;
-  background: #000;
+  background: black;
   color: white;
   width: 100%;
   border: none;
@@ -115,11 +115,11 @@ button {
 }
 
 button:hover {
-  background-color: #3283a8;
+  background-color: #71bf87;
 }
 
 button:active {
-  background-color: #0c8534;
+  background-color: #068a2b;
 }
 
 .auto {
