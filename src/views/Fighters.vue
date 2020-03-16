@@ -32,24 +32,11 @@ export default {
 </script>
 
 <style scoped>
-
-/*
-.fa-search::before {
-  content: "\f002";
-}*/
-
-
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-/*
-footer {
-  position: -130;
-}
-*/
 
 .search {
   border: 1px solid #ccc;

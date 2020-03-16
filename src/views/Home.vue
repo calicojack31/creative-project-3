@@ -1,37 +1,4 @@
 <template>
-  <!--might need wrapper here-->
-  <!--
-<div id="menu">
-  <div id="brand" class="row">
-    <a href="/" class="router-link-active">
-      <img src="/images/smash-logo-transparent.png">
-    </a>
-  </div>
-  <div id="options" class="row">
-    <a href="/fighters" class="router-link-exact-active router-link-active">
-      <div class="menu-item col-sm">
-        <img src="/images/head-icon.png">
-        <p>Fighters</p>
-      </div>
-    </a>
-    <a href="/stages" class="">
-      <div class="menu-item col-sm">
-        <img src="/images/stages-icon.png">
-        <p>Stages</p>
-      </div>
-    </a>
-    <a href="/smash" class="">
-      <div class="menu-item col-sm">
-        <img src="/images/smash-ball.png">
-        <p>Smash</p>
-      </div>
-    </a>
-  </div>
-</div>
--->
-<!--
-data-v-fae5bece=""
--->
 
 <div class="welcome-text">
   <h1>Welcome to Super Smash Brothers Vue!</h1>
@@ -42,8 +9,6 @@ data-v-fae5bece=""
   </div>
 
 </template>
-
-
 
 <style scoped>
 .wrapper {

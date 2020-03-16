@@ -4,8 +4,8 @@
     <div class="fighter" v-for="fighter in fighters" :key="fighter.id">
       <div class="info">
         <h1 class="row">{{fighter.name.toUpperCase()}}</h1>
-        <h2 class="row">{{fighter.country}}</h2>
-        <h2 class="row">{{fighter.price}}</h2>
+        <h2 class="row">{{fighter.origin}}</h2>
+        <h2 class="row">{{fighter.description}}</h2>
       </div>
       <div class="image row">
         <img :src="'/images/fighters/'+fighter.image">

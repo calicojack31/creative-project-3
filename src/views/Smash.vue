@@ -4,8 +4,8 @@
     <div class="fighter" v-for="item in $root.$data.combatants" :key="item"><!--EARLIER THE KEY WAS $ROOT.$DATA.CART[ITEM]-->
       <div class="info">
         <h1 class="row">{{getFighter(item).name.toUpperCase()}}</h1>
-        <h2 class="row">{{getFighter(item).country}}</h2>
-        <h2 class="row">{{getFighter(item).price}}</h2>
+        <h2 class="row">{{getFighter(item).origin}}</h2>
+        <h2 class="row">{{getFighter(item).description}}</h2>
       </div>
       <div class="image row">
         <img :src="'/images/fighters/'+getFighter(item).image">
@@ -142,7 +142,6 @@ export default {
 .fighter .image {
   display: flex;
   justify-content: center;
-  /*margin-bottom: 5px;*/
 }
 
 .stage {
@@ -182,13 +181,15 @@ export default {
   font-size: 10px;
 }
 
-.price {
+/*
+.description {
   display: flex;
 }
 
-.price h2 {
+.description h2 {
   margin-top: -5px;
 }
+*/
 
 .remove-figher {
   display: flex;
@@ -201,7 +202,6 @@ button {
   width: 100%;
   border: none;
   margin-top: -8px;
-  /*border: 5px solid blue;*/
 }
 
 button:hover {

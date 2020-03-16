@@ -9,10 +9,7 @@
       <div class="image">
         <img :src="'/images/stages/'+stage.image">
       </div>
-      <div class="description"><!--Change name-->
-        <!--<h2>{{stage.description}}</h2>-->
-        <!-- GOING TO TRY TO ADD EVENT HANDLER HERE -->
-        <!--NEED TO CHANGE THE NAME OF CART-->
+      <div class="description">
         <button class="auto" @click="addToBattle(stage.id)">Select</button>
       </div>
     </div>
@@ -29,7 +26,6 @@ export default {
   methods: {
     addToBattle(id) {
       this.$root.$data.stageSelection = id;
-      //this.$root.$data.cart.push(id);
     }
   }
 }
@@ -63,13 +59,6 @@ export default {
   width: 400px;
   object-fit: cover;
 }
-
-/*
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-*/
 
 .stage .image {
   display: flex;
