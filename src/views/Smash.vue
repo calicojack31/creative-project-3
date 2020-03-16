@@ -196,7 +196,7 @@ export default {
 
 button {
   height: 100%;
-  background: red;
+  background: #bf1b1b;
   color: white;
   width: 100%;
   border: none;
@@ -205,11 +205,11 @@ button {
 }
 
 button:hover {
-  background-color: pink;
+  background-color: #c24e4e;
 }
 
 button:active {
-  background-color: purple;
+  background-color: #ff2b2b;
 }
 
 
@@ -222,7 +222,7 @@ button:active {
 }
 
 #start-battle:hover {
-  background: #5d9974
+  background: #5d9974;
 }
 
 #start-battle:active {
